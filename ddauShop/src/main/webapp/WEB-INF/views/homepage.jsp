@@ -18,7 +18,7 @@
 						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
-					<a href="/ddShop" class="navbar-brand" href="#">DDAUSHOP</a>
+					<a href="/ddauShop" class="navbar-brand" href="#">DDAUSHOP</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
@@ -43,7 +43,7 @@
 									href="/DDShop/login"><span class="signin"></span>${FistText }</a></li>
 							</c:when>
 							<c:otherwise>
-								<li><a href="/ddauShop/login/" title="Đăng Nhập"><span
+								<li><a href="login/" title="Đăng Nhập"><span
 										class="signin"><img alt="icon-signin"
 											src="<c:url value="/resources/IMG/signin.png"/>" /></span>ĐĂNG NHẬP</a></li>
 							</c:otherwise>
@@ -57,8 +57,7 @@
 	<div id="mider" class="container-fluid">
 		<div id="goal">
 			<div class="col-sm-4 wow bounceInLeft">
-				<img class="icon" alt="chatluong"
-					src="<c:url value="/resources/IMG/medal-homepage.png" />"> <br />
+				<img class="icon" alt="chatluong" src='<c:url value="/resources/IMG/medal-homepage.png" />'> <br />
 				<span class="text-size-homepage-1">CHẤT LƯỢNG</span> <br /> <span
 					id="chatluong-1">chúng tôi cam kết sẽ mang đến cho các bạn
 					chất lượng sản phẩm tốt nhất</span>
@@ -86,11 +85,11 @@
 			<div class="item-row">
 				<c:forEach var="sanpham" items="${listsanpham}">
 					<a href="detail/${sanpham.getMasanpham()}">
-						<div class="col-sm-3 wow zoomIn">
+						<div class="col-md-3 wow zoomIn">
 							<div class="border-item ">
 								<div>
 									<img class="size-item" alt="item"
-										src=" <c:url value="/resources/IMG/SanPham/${sanpham.getHinhsanpham() }"/>">
+										src=" <c:url value="/resources/IMG/SanPham/${sanpham.getTensanpham()}.jpg"/>">
 									<br />
 								</div>
 								<div class="name-item">
@@ -120,8 +119,7 @@
 			<div class="col-sm-4">
 				<span>LIÊN HỆ</span><br />
 				<div class="text-left">
-					<span>Ngõ 73, Yên Xá,
-						Thanh Trì, Hà Nội</span><br /> <span>Email:
+					<span>Ngõ 73 Yên Xá,Thanh Trì, Hà Nội</span><br /> <span>Email:
 						Tranluongson.1005@gmail.com</span><br /> <span>Hotline:0989778793</span>
 				</div>
 			</div>

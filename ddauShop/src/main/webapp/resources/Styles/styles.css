@@ -278,12 +278,10 @@ html, boby {
 
 .size-item {
 	width: 100%;
-	    height: 100%;
+	height: 100%;
 }
 
-													/*code Detail Page */
-													
-													
+/*code Detail Page */
 #header-detail {
 	background-color: #6d6d6d;
 	box-shadow: -1px 8px 10px #888888;
@@ -294,43 +292,55 @@ html, boby {
 	background-size: cover;
 }
 
-#text-menu {
+.text-menu {
 	text-align: -webkit-left;
+	padding: 84px;
+	margin: -64px;
 }
 
-
-#detail-menu {
-	
+.text-menu li>ul {
+	display: none
 }
 
+.text-menu li:hover>ul {
+	display: block;
+}
+#text-menubox {
+	font-weight: 600;
+}
 #size-item-detailpage {
 	width: 100%;
-	
-}
-#table-detailpage{
-	
-}
-#mider-detail{
-	padding-top: 100px;
-}
-#name-item-detailpage{
-    color: brown;
-    font-size: 30px;
 }
 
-.font-style{
+#table-detailpage {
+	
+}
+
+#mider-detail {
+	padding-top: 100px;
+}
+
+#name-item-detailpage {
+	color: brown;
+	font-size: 30px;
+}
+
+.font-style {
 	font-family: -webkit-pictograph;
 }
-#menu-detailpage{
+
+#menu-detailpage {
 	color: brown;
-    font-size: 27px;
-    font-family: -webkit-pictograph;
+	font-size: 27px;
+	font-family: -webkit-pictograph;
 }
-#mota-detailpage{
-	 color: brown;
-    font-size: 30px;
-    font-family: -webkit-pictograph;
+
+#mota-detailpage {
+	color: brown;
+	font-size: 30px;
+	font-family: -webkit-pictograph;
 }
-#text-detailpage-mota{
-text-align: center;
+
+#text-detailpage-mota {
+	text-align: center;
 }

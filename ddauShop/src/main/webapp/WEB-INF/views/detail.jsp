@@ -22,7 +22,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li ><a href="#">TRANG CHỦ</a></li>
+						<li><a href="#">TRANG CHỦ</a></li>
 						<li class="dropdown"><a class="dropdown-toggle"
 							data-toggle="dropdown" href="#">SẢN PHẨM<span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -57,8 +57,17 @@
 	<div id="mider-detail" class="container-fluid ">
 		<div class="col-sm-2" id="detail-menu">
 			<span id="menu-detailpage">Danh mục khác</span>
-			<ul id="text-menu">
-				<li>Quần dài</li>
+			<ul class="text-menu">
+				<li>Quần dài
+					<ul>
+						<li>Quần dài</li>
+						<li>Áo dài tay</li>
+						<li>Áo ngắn tay</li>
+						<li>Quần kaki</li>
+						<li>Quần dài</li>
+
+					</ul>
+				</li>
 				<li>Áo dài tay</li>
 				<li>Áo ngắn tay</li>
 				<li>Quần kaki</li>
@@ -72,18 +81,18 @@
 		<div class="col-sm-8">
 			<div class="col-sm-4">
 				<img id="size-item-detailpage" alt="item"
-					src=" <c:url value="/resources/IMG/SanPham/${SanPhamTheoMa.getHinhsanpham()}"/>">
+					src=" <c:url value="/resources/IMG/SanPham/${SanPhamTheoMa.getTensanpham()}.jpg"/>">
 			</div>
 			<div class="col-sm-8">
 				<div>
-					<span id="name-item-detailpage" class="font-style">${SanPhamTheoMa.getTensanpham()}</span> <br /> 
-					<span class="cost-item">${SanPhamTheoMa.getGiatien()}</span>
+					<span id="name-item-detailpage" class="font-style">${SanPhamTheoMa.getTensanpham()}</span>
+					<br /> <span class="cost-item">${SanPhamTheoMa.getGiatien()}</span>
 				</div>
 
 				<table id="table-detailpage" class="table">
 
 					<thead>
-						<tr>
+						<tr id="text-menubox">
 							<td>Màu sản phẩm</td>
 							<td>Size</td>
 							<td>Số Lượng</td>
@@ -93,7 +102,7 @@
 						<c:forEach var="chitietsanpham"
 							items="${SanPhamTheoMa.getChitietsanpham()}">
 							<tr>
-								<td class="mau" >${chitietsanpham.getMausanpham().getTenmau()}</td>
+								<td class="mau">${chitietsanpham.getMausanpham().getTenmau()}</td>
 								<td>${chitietsanpham.getSizesanpham().getSize()}</td>
 								<td>${chitietsanpham.getSoluong()}</td>
 								<td><button class="btn-success">Thêm vào giỏ</button></td>
@@ -107,9 +116,7 @@
 
 
 		<div id="text-detailpage-mota" class="col-sm-2">
-			<span id="mota-detailpage">Mô tả</span>
-			<br />
-			<span >${SanPhamTheoMa.getMota()}</span>
+			<span id="mota-detailpage">Mô tả</span> <br /> <span>${SanPhamTheoMa.getMota()}</span>
 		</div>
 
 
@@ -126,14 +133,13 @@
 			<div class="col-sm-4">
 				<span>LIÊN HỆ</span><br />
 				<div class="text-left">
-					<span>Số 18, liền kề 14, tổng cục 5 bộ công an, Yên Xá,
-						Thanh Trì, Hà Nội</span><br /> <span>Email:
+					<span>Ngõ 73 Yên Xá,Thanh Trì, Hà Nội</span><br /> <span>Email:
 						Tranluongson.1005@gmail.com</span><br /> <span>Hotline:0989778793</span>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<span>GÓP Ý</span><br />
-<div class="text-left">
+				<div class="text-left">
 					<form action="" method="post">
 						<textarea name="Email-donate" id="email-donate"
 							placeholder="Email" rows="5" cols="30"></textarea>

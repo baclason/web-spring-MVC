@@ -20,7 +20,6 @@ $(document).ready(function() {
 					window.location = Link
 				} else {
 					$("#kiemtradangnhap").append("Đăng nhập thất bại")
-					alert("efrdsf")
 					e.stopImmediatePropagation();
 				}
 			}
