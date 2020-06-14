@@ -1,41 +1,66 @@
 package com.tranluongson.entity;
 
 public class GioHang {
-	int masanphamMua;
-	int soluongMua;
 	
-	String mausanphamMua;
-	String sizesanphamMua;
-	String tensanphamMua;
-	public int getMasanphamMua() {
-		return masanphamMua;
+	int masanpham;
+	int masize;
+	int mamau;
+	int soluong;
+	String tensanpham;
+	String giatien;
+	String tenmau;
+	String tensize;
+	public int getMasanpham() {
+		return masanpham;
 	}
-	public void setMasanphamMua(int masanphamMua) {
-		this.masanphamMua = masanphamMua;
+	public void setMasanpham(int masanpham) {
+		this.masanpham = masanpham;
 	}
-	public int getSoluongMua() {
-		return soluongMua;
+	public int getMasize() {
+		return masize;
 	}
-	public void setSoluongMua(int soluongMua) {
-		this.soluongMua = soluongMua;
+	public void setMasize(int masize) {
+		this.masize = masize;
 	}
-	public String getMausanphamMua() {
-		return mausanphamMua;
+	public int getMamau() {
+		return mamau;
 	}
-	public void setMausanphamMua(String mausanphamMua) {
-		this.mausanphamMua = mausanphamMua;
+	public void setMamau(int mamau) {
+		this.mamau = mamau;
 	}
-	public String getSizesanphamMua() {
-		return sizesanphamMua;
+	public int getSoluong() {
+		return soluong;
 	}
-	public void setSizesanphamMua(String sizesanphamMua) {
-		this.sizesanphamMua = sizesanphamMua;
+	public void setSoluong(int soluong) {
+		this.soluong = soluong;
 	}
-	public String getTensanphamMua() {
-		return tensanphamMua;
+	public String getTensanpham() {
+		return tensanpham;
 	}
-	public void setTensanphamMua(String tensanphamMua) {
-		this.tensanphamMua = tensanphamMua;
+	public void setTensanpham(String tensanpham) {
+		this.tensanpham = tensanpham;
+	}
+	public String getGiatien() {
+		return giatien;
+	}
+	public void setGiatien(String giatien) {
+		this.giatien = giatien;
+	}
+	public String getTenmau() {
+		return tenmau;
+	}
+	public void setTenmau(String tenmau) {
+		this.tenmau = tenmau;
+	}
+	public String getTensize() {
+		return tensize;
+	}
+	public void setTensize(String tensize) {
+		this.tensize = tensize;
 	}
 	
+	
+	
+	
+
 }

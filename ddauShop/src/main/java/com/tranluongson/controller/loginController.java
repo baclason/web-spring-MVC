@@ -37,10 +37,12 @@ public class loginController {
 				nhanvienservice.register(nhanVien);
 			} else {
 			map.addAttribute("kiemtradangnhap", "Mật khẩu xác nhận không trùng khớp");
+			return "login";
 			}
 
 		} else {
 			map.addAttribute("kiemtradangnhap", "Email sai, hãy nhập lại");
+			return "login";
 		}
 
 		return "login";

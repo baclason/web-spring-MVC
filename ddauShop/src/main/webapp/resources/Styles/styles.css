@@ -228,7 +228,7 @@ html, boby {
 	font-size: 12px;
 }
 
-.cost-item {
+#giatien {
 	font-weight: 700;
 	font-size: 14px;
 	color: red;
@@ -320,13 +320,11 @@ html, boby {
 	padding-top: 100px;
 }
 
-#name-item-detailpage {
+
+.font-style-name {
+	font-family: -webkit-pictograph;
 	color: brown;
 	font-size: 30px;
-}
-
-.font-style {
-	font-family: -webkit-pictograph;
 }
 
 #menu-detailpage {

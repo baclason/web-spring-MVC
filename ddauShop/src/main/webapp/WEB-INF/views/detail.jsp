@@ -85,8 +85,10 @@
 			</div>
 			<div class="col-sm-8">
 				<div>
-					<span id="name-item-detailpage" class="font-style">${SanPhamTheoMa.getTensanpham()}</span>
-					<br /> <span class="cost-item">${SanPhamTheoMa.getGiatien()}</span>
+					<span id="tensanpham"
+						data-masanpham="${SanPhamTheoMa.getMasanpham()}"
+						class="font-style-name">${SanPhamTheoMa.getTensanpham()}</span> <br />
+					<span id="giatien">${SanPhamTheoMa.getGiatien()}</span>
 				</div>
 
 				<table id="table-detailpage" class="table">
@@ -102,10 +104,12 @@
 						<c:forEach var="chitietsanpham"
 							items="${SanPhamTheoMa.getChitietsanpham()}">
 							<tr>
-								<td class="mau">${chitietsanpham.getMausanpham().getTenmau()}</td>
-								<td>${chitietsanpham.getSizesanpham().getSize()}</td>
-								<td>${chitietsanpham.getSoluong()}</td>
-								<td><button class="btn-success">Thêm vào giỏ</button></td>
+								<td class="mau"
+									data-mamau=" ${chitietsanpham.getMausanpham().getMamau()}">${chitietsanpham.getMausanpham().getTenmau()}</td>
+								<td class="size"
+									data-masize="${chitietsanpham.getSizesanpham().getMasize()} ">${chitietsanpham.getSizesanpham().getSize()}</td>
+								<td class="soluong" data-soluong="${chitietsanpham.getSoluong()}">${chitietsanpham.getSoluong()}</td>
+								<td><button class="btn-success btn-giohang">Thêm vào giỏ</button></td>
 							</tr>
 						</c:forEach>
 
